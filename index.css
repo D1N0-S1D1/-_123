@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Главный контейнер */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: center center no-repeat  fixed #7700ff;
+    background-size: cover;
+    font-family: "Sour Gummy", sans-serif;
+    color: greenyellow;
+    background-blend-mode: color-burn;
+}
+
+/* Контентная часть */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    width: 200px;
+    height: 130px;
+    border-radius: 50px;
+    list-style: none;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px solid black;
+    color: greenyellow;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 48px;
+    padding: 20px;
+}
+
+.description {
+    font-size: 26px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Футер */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Медиазапросы для планшетов (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        font-size: 36px;
+    }
+
+    body {
+        background: center center no-repeat  fixed #7700ff;
+        background-size: cover;
+        font-family: "Sour Gummy", sans-serif;
+        color: greenyellow;
+        background-blend-mode: color-burn;
+    }
+
+    .description {
+        font-size: 20px;
+        padding: 30px 10px;
+    }
+
+    li {
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+        padding: 12px;
+        margin: 12px;
+        border-radius: 27px;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 13px;
+    }
+}
+
+/* Медиазапросы для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+    body {
+        background: center center no-repeat  fixed #7700ff;
+        background-size: cover;
+        font-family: "Sour Gummy", sans-serif;
+        color: greenyellow;
+        background-blend-mode: color-burn;
+    }
+    
+    header {
+        font-size: 34px;
+    }
+
+    .description {
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    li {
+        width: 180px;
+        height:45px;
+        padding: 13px;
+        margin: 10px 0;
+        font-size: 17px;
+        border-radius: 17px;
+        color: greenyellow;
+    }
+
+    ul {
+        flex-direction: column;
+        padding: 0 17px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+/* Медиазапросы для очень маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+    header {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    li {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 5px;
+        height: auto;
+
+    }
+}
